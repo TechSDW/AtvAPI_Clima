@@ -3,7 +3,7 @@ document.getElementById("btn-submit").addEventListener("click", searchCity)
 async function searchCity(event){
     event.preventDefault()
 
-    const api_key = "ef79ad6740851463bedf79c60575e3ae"
+    const api_key = ""
     let api_url = ""
 
     const user_input = document.getElementById("input-city").value.split(", ")
