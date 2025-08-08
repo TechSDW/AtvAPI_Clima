@@ -32,6 +32,7 @@ function displayInfo(city, country, temp, feels_like, humidity){
 
     const sad = document.createElement("img")
     sad.src = "img/sun.png"
+    temp_info.append(sad)
 
     const temp_display = document.createElement("h2")
     temp_display.textContent = `${(temp - 273.15).toFixed(1)}°C`
@@ -50,6 +51,7 @@ function displayInfo(city, country, temp, feels_like, humidity){
     const info_display = document.getElementsByClassName("info-display")[0]
     info_display.innerHTML = ""
     info_display.append(name_display)
+    info_display.append(descr_display)
     info_display.append(temp_info)
     info_display.append(humidity_display)
     info_display.append(map)
